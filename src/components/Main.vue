@@ -1,32 +1,31 @@
 <template>
   <div id="app">
     <div class="border1">
-      <p>Actual ad dimensions: 300 x 524</p>
+      <p>Actual ad dimensions: {{size1.height}} x {{size1.width}}</p>
       <VueDragResize ref="el1" :isActive="true" :w="size1.width" :h="size1.height" :minw="524" :minh="300" :isDraggable="false" :sticks="['ml','mr']"
         :style="{width: `${size1.width}px`, height: `${size1.height}px`}" @resizing="resize1">
-        <iframe src="http://adpiler.s3.eu-central-1.amazonaws.com/ads/52516abf46eda87ed4f7123e11c50578_html/WM-banner-test-300-970x250-m-afisha.html" width="100%" height="100%" frameborder="0"></iframe>
+        <iframe src="https://adpiler.s3.eu-central-1.amazonaws.com/ads/52516abf46eda87ed4f7123e11c50578_html/WM-banner-test-300-970x250-m-afisha.html" width="100%" height="100%" frameborder="0"></iframe>
         <button v-on:click="adChange1">Show Ad in 300 x 600</button>
       </VueDragResize>
     </div>
 
     <div class="border1" style="width: 50%">
-      <p>Actual ad dimensions: 300 x 524</p>
+      <p>Actual ad dimensions: {{size2.height}} x {{size2.width}}</p>
       <VueDragResize :isActive="true" :w="size2.width" :h="size2.height" :minw="524" :minh="300" :isDraggable="false" :sticks="['bm']"
         :style="{width: `${size2.width}px`, height: `${size2.height}px`}" @resizing="resize2">
-        <iframe src="http://adpiler.s3.eu-central-1.amazonaws.com/ads/52516abf46eda87ed4f7123e11c50578_html/WM-banner-test-300-970x250-m-afisha.html" width="100%" height="100%" frameborder="0"></iframe>
+        <iframe src="https://adpiler.s3.eu-central-1.amazonaws.com/ads/52516abf46eda87ed4f7123e11c50578_html/WM-banner-test-300-970x250-m-afisha.html" width="100%" height="100%" frameborder="0"></iframe>
         <button v-on:click="adChange2">Show Ad in 300 x 600</button>
       </VueDragResize>
     </div>
 
     <div class="border1">
-      <p>Actual ad dimensions: 300 x 524</p>
+      <p>Actual ad dimensions: {{size3.height}} x {{size3.width}}</p>
       <VueDragResize :isActive="true" :w="size3.width" :h="size3.height" :minw="524" :minh="300" :isDraggable="false" :aspectRatio="true" :sticks="['br']"
         :style="{width: `${size3.width}px`, height: `${size3.height}px`, top: '0px', left: '0px'}" @resizing="resize3">
-        <iframe src="http://adpiler.s3.eu-central-1.amazonaws.com/ads/52516abf46eda87ed4f7123e11c50578_html/WM-banner-test-300-970x250-m-afisha.html" width="100%" height="100%" frameborder="0"></iframe>
+        <iframe src="https://adpiler.s3.eu-central-1.amazonaws.com/ads/52516abf46eda87ed4f7123e11c50578_html/WM-banner-test-300-970x250-m-afisha.html " width="100%" height="100%" frameborder="0"></iframe>
         <button v-on:click="adChange3">Show Ad in 300 x 600</button>
       </VueDragResize>
     </div>
-
 
   </div>
 </template>
