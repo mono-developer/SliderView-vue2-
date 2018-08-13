@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+
+    <a href="sosmethodapp://program?essentials">Essentials</a>
+    <a href="sosmethodapp://program?meditation">Essentials</a>
     <div class="border1">
       <p>Actual ad dimensions: {{size1.height}} x {{size1.width}}</p>
       <VueDragResize ref="el1" :isActive="true" :w="size1.width" :h="size1.height" :minw="524" :minh="300" :isDraggable="false" :sticks="['ml','mr']"
@@ -42,6 +45,8 @@ export default {
   data: function () {
     return {
       size1: {
+        top: 0,
+        left: 0,
         width: 524,
         height: 300
       },
